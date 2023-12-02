@@ -1,0 +1,8 @@
+Fido	Dog
+Whiskers	Cat
+Hammy	Hamster
+Buddy	Dog
+Smudge	Cat
+Peanut	Hamster
+Bella	Dog
+Oliver	Cat

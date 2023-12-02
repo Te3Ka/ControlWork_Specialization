@@ -1,0 +1,179 @@
+te3ka@te3ka-VirtualBox:~/ControlWork$ wget https://dev.mysql.com/get/mysql-apt-config_0.8.28-1_all.deb
+--2023-12-02 13:03:08--  https://dev.mysql.com/get/mysql-apt-config_0.8.28-1_all.deb
+Распознаётся dev.mysql.com (dev.mysql.com)… 184.51.238.43, 2a02:2d8:0:799e::2e31, 2a02:2d8:0:7987::2e31
+Подключение к dev.mysql.com (dev.mysql.com)|184.51.238.43|:443... соединение установлено.
+HTTP-запрос отправлен. Ожидание ответа… 302 Moved Temporarily
+Адрес: https://repo.mysql.com//mysql-apt-config_0.8.28-1_all.deb [переход]
+--2023-12-02 13:03:08--  https://repo.mysql.com//mysql-apt-config_0.8.28-1_all.deb
+Распознаётся repo.mysql.com (repo.mysql.com)… 23.210.173.94, 2a02:26f0:5200:1b5::1d68, 2a02:26f0:5200:18f::1d68
+Подключение к repo.mysql.com (repo.mysql.com)|23.210.173.94|:443... соединение установлено.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: 18124 (18K) [application/x-debian-package]
+Сохранение в: ‘mysql-apt-config_0.8.28-1_all.deb’
+
+mysql-apt-config_0.8.28- 100%[==================================>]  17,70K  --.-KB/s    за 0s      
+
+2023-12-02 13:03:09 (260 MB/s) - ‘mysql-apt-config_0.8.28-1_all.deb’ сохранён [18124/18124]
+
+te3ka@te3ka-VirtualBox:~/ControlWork$ sudo dpkg -i mysql-apt-config_0.8.28-1_all.deb 
+[sudo] пароль для te3ka: 
+Выбор ранее не выбранного пакета mysql-apt-config.
+(Чтение базы данных … на данный момент установлено 208857 файлов и каталогов.)
+Подготовка к распаковке mysql-apt-config_0.8.28-1_all.deb …
+Распаковывается mysql-apt-config (0.8.28-1) …
+Настраивается пакет mysql-apt-config (0.8.28-1) …
+te3ka@te3ka-VirtualBox:~/ControlWork$ sudo apt-get update
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+Пол:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]                         
+Пол:3 http://repo.mysql.com/apt/ubuntu jammy InRelease [20,2 kB]                                   
+Пол:4 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]                       
+Пол:5 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]                          
+Пол:6 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main i386 Packages [537 kB]                
+Пол:7 https://download.docker.com/linux/ubuntu jammy InRelease [48,8 kB]                           
+Пол:8 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1 212 kB]             
+Пол:9 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [253 kB]               
+Пол:10 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 DEP-11 Metadata [101 kB]      
+Пол:11 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [16,1 kB]       
+Пол:12 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted i386 Packages [32,8 kB]        
+Пол:13 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1 185 kB] 
+Пол:14 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [192 kB]      
+Пол:15 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 c-n-f Metadata [520 B]   
+Пол:16 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1 010 kB]       
+Пол:17 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe i386 Packages [671 kB]         
+Пол:18 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [224 kB]    
+Пол:19 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 DEP-11 Metadata [305 kB]   
+Пол:20 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [22,1 kB]   
+Пол:21 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [41,6 kB]       
+Пол:22 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 DEP-11 Metadata [940 B]
+Пол:23 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [472 B]   
+Пол:24 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [64,2 kB]          
+Пол:25 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main i386 Packages [56,3 kB]       
+Пол:26 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main amd64 DEP-11 Metadata [4 932 B]
+Пол:27 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]       
+Пол:28 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe i386 Packages [16,8 kB]       
+Пол:29 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [27,8 kB]  
+Пол:30 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16,5 kB]  
+Пол:31 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 DEP-11 Metadata [18,9 kB]
+Пол:32 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe DEP-11 64x64 Icons [25,6 kB]   
+Пол:33 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [644 B] 
+Пол:34 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 Sources [963 B]                           
+Пол:35 http://security.ubuntu.com/ubuntu jammy-security/main i386 Packages [373 kB]
+Пол:36 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1 002 kB]             
+Пол:37 http://repo.mysql.com/apt/ubuntu jammy/mysql-apt-config i386 Packages [565 B]               
+Пол:38 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [193 kB]               
+Пол:39 http://security.ubuntu.com/ubuntu jammy-security/main amd64 DEP-11 Metadata [43,0 kB]       
+Пол:40 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [11,4 kB]        
+Пол:41 http://security.ubuntu.com/ubuntu jammy-security/restricted i386 Packages [32,4 kB]         
+Пол:42 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1 164 kB]   
+Пол:43 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [189 kB]         
+Пол:44 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [520 B]    
+Пол:45 http://security.ubuntu.com/ubuntu jammy-security/universe i386 Packages [573 kB]            
+Пол:46 https://download.docker.com/linux/ubuntu jammy/stable amd64 Packages [22,9 kB]              
+Пол:47 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [807 kB]           
+Пол:48 http://repo.mysql.com/apt/ubuntu jammy/mysql-apt-config amd64 Packages [565 B]              
+Пол:49 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [150 kB]           
+Пол:50 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 DEP-11 Metadata [55,1 kB]   
+Пол:51 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [16,8 kB]    
+Пол:52 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [36,5 kB]        
+Пол:53 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [260 B]    
+Пол:54 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 Packages [12,6 kB]                   
+Пол:55 http://repo.mysql.com/apt/ubuntu jammy/mysql-tools i386 Packages [457 B]
+Пол:56 http://repo.mysql.com/apt/ubuntu jammy/mysql-tools amd64 Packages [7 994 B]
+Получено 11,1 MB за 4с (2 951 kB/s)                                
+Чтение списков пакетов… Готово
+te3ka@te3ka-VirtualBox:~/ControlWork$ sudo apt-get install mysql-server
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово         
+Следующие пакеты устанавливались автоматически и больше не требуются:
+  libcgi-fast-perl libcgi-pm-perl libevent-core-2.1-7 libevent-pthreads-2.1-7 libfcgi-bin
+  libfcgi-perl libfcgi0ldbl libhtml-template-perl libprotobuf-lite23 ubuntu-fan
+Для их удаления используйте «sudo apt autoremove».
+Будут установлены следующие дополнительные пакеты:
+  mysql-client mysql-common mysql-community-client mysql-community-client-core
+  mysql-community-client-plugins mysql-community-server mysql-community-server-core
+Следующие пакеты будут УДАЛЕНЫ:
+  mysql-client-8.0 mysql-client-core-8.0 mysql-server-8.0 mysql-server-core-8.0
+Следующие НОВЫЕ пакеты будут установлены:
+  mysql-client mysql-community-client mysql-community-client-core mysql-community-client-plugins
+  mysql-community-server mysql-community-server-core
+Следующие пакеты будут обновлены:
+  mysql-common mysql-server
+Обновлено 2 пакетов, установлено 6 новых пакетов, для удаления отмечено 4 пакетов, и 118 пакетов не обновлено.
+Необходимо скачать 30,9 MB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 32,7 MB.
+Хотите продолжить? [Д/н] y
+Пол:1 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-server amd64 8.0.35-1ubuntu22.04 [66,6 kB]
+Пол:2 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-common amd64 8.0.35-1ubuntu22.04 [67,9 kB]
+Пол:3 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-client-plugins amd64 8.0.35-1ubuntu22.04 [1 443 kB]
+Пол:4 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-client-core amd64 8.0.35-1ubuntu22.04 [2 120 kB]
+Пол:5 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-client amd64 8.0.35-1ubuntu22.04 [2 195 kB]
+Пол:6 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-client amd64 8.0.35-1ubuntu22.04 [66,6 kB]
+Пол:7 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-server-core amd64 8.0.35-1ubuntu22.04 [24,8 MB]
+Пол:8 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-server amd64 8.0.35-1ubuntu22.04 [78,3 kB]
+Получено 30,9 MB за 1с (26,1 MB/s)                
+Предварительная настройка пакетов …
+(Чтение базы данных … на данный момент установлено 208862 файла и каталога.)
+Подготовка к распаковке …/mysql-server_8.0.35-1ubuntu22.04_amd64.deb …
+Распаковывается mysql-server (8.0.35-1ubuntu22.04) на замену (8.0.34-0ubuntu0.22.04.1) …
+(Чтение базы данных … на данный момент установлено 208866 файлов и каталогов.)
+Удаляется mysql-server-8.0 (8.0.34-0ubuntu0.22.04.1) …
+update-alternatives: используется /etc/mysql/my.cnf.fallback для предоставления /etc/mysql/my.cnf (my.cnf) в автоматическом режиме
+Удаляется mysql-client-8.0 (8.0.34-0ubuntu0.22.04.1) …
+Удаляется mysql-client-core-8.0 (8.0.34-0ubuntu0.22.04.1) …
+Удаляется mysql-server-core-8.0 (8.0.34-0ubuntu0.22.04.1) …
+(Чтение базы данных … на данный момент установлено 208663 файла и каталога.)
+Подготовка к распаковке …/0-mysql-common_8.0.35-1ubuntu22.04_amd64.deb …
+Распаковывается mysql-common (8.0.35-1ubuntu22.04) на замену (5.8+1.0.8) …
+Выбор ранее не выбранного пакета mysql-community-client-plugins.
+Подготовка к распаковке …/1-mysql-community-client-plugins_8.0.35-1ubuntu22.04_amd64.deb …
+Распаковывается mysql-community-client-plugins (8.0.35-1ubuntu22.04) …
+Выбор ранее не выбранного пакета mysql-community-client-core.
+Подготовка к распаковке …/2-mysql-community-client-core_8.0.35-1ubuntu22.04_amd64.deb …
+Распаковывается mysql-community-client-core (8.0.35-1ubuntu22.04) …
+Выбор ранее не выбранного пакета mysql-community-client.
+Подготовка к распаковке …/3-mysql-community-client_8.0.35-1ubuntu22.04_amd64.deb …
+Распаковывается mysql-community-client (8.0.35-1ubuntu22.04) …
+Выбор ранее не выбранного пакета mysql-client.
+Подготовка к распаковке …/4-mysql-client_8.0.35-1ubuntu22.04_amd64.deb …
+Распаковывается mysql-client (8.0.35-1ubuntu22.04) …
+Выбор ранее не выбранного пакета mysql-community-server-core.
+Подготовка к распаковке …/5-mysql-community-server-core_8.0.35-1ubuntu22.04_amd64.deb …
+Распаковывается mysql-community-server-core (8.0.35-1ubuntu22.04) …
+Выбор ранее не выбранного пакета mysql-community-server.
+Подготовка к распаковке …/6-mysql-community-server_8.0.35-1ubuntu22.04_amd64.deb …
+Распаковывается mysql-community-server (8.0.35-1ubuntu22.04) …
+Настраивается пакет mysql-common (8.0.35-1ubuntu22.04) …
+Устанавливается новая версия файла настройки /etc/mysql/conf.d/mysql.cnf …
+Устанавливается новая версия файла настройки /etc/mysql/my.cnf.fallback …
+Настраивается пакет mysql-community-server-core (8.0.35-1ubuntu22.04) …
+Настраивается пакет mysql-community-client-plugins (8.0.35-1ubuntu22.04) …
+Настраивается пакет mysql-community-client-core (8.0.35-1ubuntu22.04) …
+Настраивается пакет mysql-community-client (8.0.35-1ubuntu22.04) …
+Настраивается пакет mysql-client (8.0.35-1ubuntu22.04) …
+Настраивается пакет mysql-community-server (8.0.35-1ubuntu22.04) …
+Устанавливается новая версия файла настройки /etc/apparmor.d/usr.sbin.mysqld …
+Устанавливается новая версия файла настройки /etc/mysql/mysql.cnf …
+Устанавливается новая версия файла настройки /etc/mysql/mysql.conf.d/mysqld.cnf …
+update-alternatives: используется /etc/mysql/mysql.cnf для предоставления /etc/mysql/my.cnf (my.cnf) в автоматическом режиме
+Настраивается пакет mysql-server (8.0.35-1ubuntu22.04) …
+Обрабатываются триггеры для man-db (2.10.2-1) …
+Обрабатываются триггеры для libc-bin (2.35-0ubuntu3.4) …
+te3ka@te3ka-VirtualBox:~/ControlWork$ 
+
+te3ka@te3ka-VirtualBox:~/ControlWork$ systemctl status mysql
+● mysql.service - MySQL Community Server
+     Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sat 2023-12-02 13:06:27 MSK; 2min 24s ago
+       Docs: man:mysqld(8)
+             http://dev.mysql.com/doc/refman/en/using-systemd.html
+   Main PID: 5060 (mysqld)
+     Status: "Server is operational"
+      Tasks: 37 (limit: 4599)
+     Memory: 486.9M
+        CPU: 7.443s
+     CGroup: /system.slice/mysql.service
+             └─5060 /usr/sbin/mysqld
+
+дек 02 13:06:20 te3ka-VirtualBox systemd[1]: Starting MySQL Community Server...
+дек 02 13:06:27 te3ka-VirtualBox systemd[1]: Started MySQL Community Server.

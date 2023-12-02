@@ -1,0 +1,8 @@
+Thunder	Horse
+Sandy	Camel
+Eeyore	Donkey
+Storm	Horse
+Dune	Camel
+Burro	Donkey
+Blaze	Horse
+Sahara	Camel

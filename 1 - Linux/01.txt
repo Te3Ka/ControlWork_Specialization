@@ -1,0 +1,49 @@
+te3ka@te3ka-VirtualBox:~$ mkdir ControlWork
+te3ka@te3ka-VirtualBox:~$ cd ControlWork
+te3ka@te3ka-VirtualBox:~/ControlWork$ cat > Pets.txt
+Fido	Dog
+Whiskers        Cat           
+Hammy	Hamster
+Buddy   Dog
+Smudge	Cat
+Peanut	Hamster
+Bella	Dog
+Oliver	Cat
+^C
+te3ka@te3ka-VirtualBox:~/ControlWork$ cat > 'Pack animals.txt'
+Thunder	Horse
+Sandy	Camel
+Eeyore	Donkey
+Storm	Horse
+Dune	Camel
+Burro	Donkey
+Blaze	Horse
+Sahara	Camel
+^C
+te3ka@te3ka-VirtualBox:~/ControlWork$ cat 'Pets.txt' 'Pack animals.txt' > combined.txt
+te3ka@te3ka-VirtualBox:~/ControlWork$ mv combined.txt 'Human Friends.txt'
+te3ka@te3ka-VirtualBox:~/ControlWork$ ll
+итого 20
+drwxrwxr-x  2 te3ka te3ka 4096 дек  2 12:51  ./
+drwxr-x--- 17 te3ka te3ka 4096 дек  2 12:44  ../
+-rw-rw-r--  1 te3ka te3ka  194 дек  2 12:50 'Human Friends.txt'
+-rw-rw-r--  1 te3ka te3ka  101 дек  2 12:49 'Pack animals.txt'
+-rw-rw-r--  1 te3ka te3ka   93 дек  2 12:47  Pets.txt
+te3ka@te3ka-VirtualBox:~/ControlWork$ cat 'Human Friends.txt' 
+Fido	Dog
+Whiskers	Cat
+Hammy	Hamster
+Buddy	Dog
+Smudge	Cat
+Peanut	Hamster
+Bella	Dog
+Oliver	Cat
+Thunder	Horse
+Sandy	Camel
+Eeyore	Donkey
+Storm	Horse
+Dune	Camel
+Burro	Donkey
+Blaze	Horse
+Sahara	Camel
+

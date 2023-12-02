@@ -1,0 +1,29 @@
+  393  mkdir ControlWork
+  394  cd ControlWork
+  395  cat > Pets.txt
+  396  cat > 'Pack animals.txt'
+  397  cat 'Pets.txt' 'Pack animals.txt' > combined.txt
+  398  mv combined.txt 'Human Friends.txt'
+  399  ll
+  400  echo 'Human Friends.txt' 
+  401  cat 'Human Friends.txt' 
+  402  mkdir ControlDir
+  403  mv 'Human Friends.txt' ControlDir/
+  404  tree
+  405  wget https://dev.mysql.com/get/mysql-apt-config_0.8.28-1_all.deb
+  406  sudo dpkg -i mysql-apt-config_0.8.28-1_all.deb 
+  407  sudo apt-get update
+  408  sudo apt-get install mysql-server
+  409  systemctl status mysql
+  410  http://archive.ubuntu.com/ubuntu/pool/universe/t/taurus/python-taurus_4.0.3+dfsg-1_all.deb
+  411  sud dpkg -i http://archive.ubuntu.com/ubuntu/pool/universe/t/taurus/python-taurus_4.0.3+dfsg-1_all.deb
+  412  sudo dpkg -i http://archive.ubuntu.com/ubuntu/pool/universe/t/taurus/python-taurus_4.0.3+dfsg-1_all.deb
+  413  wget http://archive.ubuntu.com/ubuntu/pool/universe/m/mc/mc_4.8.29-2_amd64.deb
+  414  sudo dpkg -i mc_4.8.29-2_amd64.deb 
+  415  sudo apt install -f
+  416  mc
+  417  sudo dpkg -i mc_4.8.29-2_amd64.deb 
+  418  sudo dpkg -r mc
+  419  sudo dpkg -i mc_4.8.29-2_amd64.deb 
+  420  sudo dpkg -r mc
+  421  history >> 'Novichikhin Ilya Vyacheslavovich, 02.12.2023, 4545.txt'

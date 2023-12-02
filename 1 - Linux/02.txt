@@ -1,0 +1,11 @@
+te3ka@te3ka-VirtualBox:~/ControlWork$ mkdir ControlDir
+te3ka@te3ka-VirtualBox:~/ControlWork$ mv 'Human Friends.txt' ControlDir/
+te3ka@te3ka-VirtualBox:~/ControlWork$ tree
+.
+├── ControlDir
+│   └── Human Friends.txt
+├── Pack animals.txt
+└── Pets.txt
+
+1 directory, 3 files
+
