@@ -1,0 +1,16 @@
+Dog///Fido///2020-01-01///sit, stay, fetch///
+Cat///Whiskers///2019-05-15///sit, punce///
+Hamster///Hammy///2021-03-10///roll, hide///
+Dog///Buddy///2018-12-10///sit, paw, bark///
+Cat///Smudge///2020-02-20///sit, pounce, scratch///
+Hamster///Peanut///2021-08-01///roll, spin///
+Dog///Bella///2019-11-11///sit, stay, roll///
+Cat///Oliver///2020-06-30///meow, scratch, jump///
+Horse///Thunder///2015-07-21///trot, canter, gallop///
+Camel///Sandy///2016-11-03///walk, carry load///
+Donkey///Eeyore///2017-09-18///walk, carry load, bray///
+Horse///Storm///2014-05-05///trot, canter///
+Camel///Dune///2018-12-12///walk, sit///
+Donkey///Burro///2019-01-23///walk, bray, kick///
+Horse///Blaze///2016-02-29///trot, jump, gallop///
+Camel///Sahara///2015-08-14///walk, run///
